@@ -18,18 +18,18 @@ void showdata() {
     System.out.println(
         "_______________________________________________________________________________________________________________________");
 System.out.println(
-        "| NO |     MENU AYAM     |   QTY    |          Harga          |          Total         |           KEUNTUNGAN          ");
+        "| NO |     MENU AYAM     |   QTY    |          Harga jual         |          Total         |           KEUNTUNGAN      ");
 System.out.println(
         "=======================================================================================================================");
     int i = 1;
     for (transaksi Transaksi : listTransaksi) {
-        System.out.printf("|%-4s|%-21s|%-10s|%-25s|%-24s|%-23s| %n",
+        System.out.printf("|%-4s|%-19s|%-10s|%-29s|%-24s|%-27s| %n",
         i++,
         Transaksi.getNamamenu(),
         Transaksi.getQty(),
         utility.toRupiah(Transaksi.getHarga_jual()),
-        utility.toRupiah(Transaksi.getHarga() * Transaksi.getQty()),
-        utility.toRupiah(Transaksi.getHarga_jual() - Transaksi.getHarga_modal()));
+        utility.toRupiah(Transaksi.getHarga_jual() * Transaksi.getQty()),
+        utility.toRupiah(Transaksi.getHarga_jual() * Transaksi.getQty() - Transaksi.getHarga_modal() * Transaksi.getQty()));
 
         }
     }

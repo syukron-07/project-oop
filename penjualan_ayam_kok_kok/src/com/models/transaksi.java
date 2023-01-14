@@ -3,8 +3,13 @@ package com.models;
 public class transaksi {
 
 private String namamenu;
+/**
+ *
+ */
 private int qty;
-private int harga;
+/**
+ *
+ */
 private int getHarga_jual;
 private int getHarga_modal;
 
@@ -20,23 +25,20 @@ public int getQty() {
 public void setQty(int qty) {
     this.qty = qty;
 }
-public int getHarga() {
-    return harga;
-}
-public void setHarga(int harga) {
-    this.harga = harga;
-}
+/**
+ * @return
+ */
 public int getHarga_jual() {
-    return harga;
+    return getHarga_jual;
 }
-public void setHarga_jual(int harga) {
-    this.harga = harga;
+public void setHarga_jual(int getHarga_jual) {
+    this.getHarga_jual = getHarga_jual;
 }
 public int getHarga_modal() {
-    return harga;
+    return getHarga_modal;
 }
-public void setHarga_modal(int harga) {
-    this.harga = harga;
+public void setHarga_modal(int getHarga_modal) {
+    this.getHarga_modal = getHarga_modal;
 }
 
 

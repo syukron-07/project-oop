@@ -51,6 +51,7 @@ void store() {
 
                 String namaAyam = listayam.get(lokasiAyam).getMenu();
                 int harga = listayam.get(lokasiAyam).getHarga_jual();
+                int hargo = listayam.get(lokasiAyam).getHarga_modal();
 
                 System.out.println("------------------------------------------------------------");
                     System.out.printf("Nama Barang |%-21s|Harga  |%-25s|Stok|%-23s| %n",
@@ -62,7 +63,8 @@ void store() {
                             transaksi Transaksi = new transaksi();
                             Transaksi.setNamamenu(namaAyam); 
                             Transaksi.setQty(jumlah);
-                            Transaksi.setHarga(harga);
+                            Transaksi.setHarga_jual(harga);
+                            Transaksi.setHarga_modal(hargo);
                             listtransaksi.add(Transaksi);
 
                             System.out.println("pembelian berhasil");

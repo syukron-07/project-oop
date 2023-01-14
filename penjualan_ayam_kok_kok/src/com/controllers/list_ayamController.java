@@ -76,7 +76,7 @@ public class list_ayamController {
                 listAyam.get(inputan).setMenu(nama);
             } 
 
-            System.out.println("masukkan harga");
+            System.out.println("masukkan harga modal");
             int harga = utility.inputInt(scan.nextLine());
 
             if (harga >= 0){
@@ -99,9 +99,9 @@ public class list_ayamController {
     }
     void Store() {
         list_ayam b = new list_ayam();
-        System.out.println("Masukkan MENU AYAM");
+        System.out.println("MASUKKAN MENU AYAM");
         b.setMenu(scan.nextLine());
-        System.out.println("Masukkan Harga");
+        System.out.println("Masukkan Harga modal");
         b.setHarga_modal(utility.inputInt(scan.nextLine()));
         System.out.println("masukkan harga jual");
         b.setHarga_jual(utility.inputInt(scan.nextLine()));
